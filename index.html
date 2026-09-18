@@ -1,0 +1,859 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Huzaifa | Web Developer & Video Editor</title>
+  <meta name="description" content="Huzaifa — Web Developer & Video Editor. Creating modern websites, cinematic edits, motion graphics and digital experiences.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- PAGE LOADER -->
+  <div class="loader" id="loader">
+    <div class="loader-logo">H</div>
+    <div class="loader-line">
+      <span></span>
+    </div>
+    <p>Loading experience...</p>
+  </div>
+
+  <!-- BACKGROUND -->
+  <div class="background">
+    <div class="grid"></div>
+    <div class="orb orb-one"></div>
+    <div class="orb orb-two"></div>
+    <div class="orb orb-three"></div>
+
+    <canvas id="particles"></canvas>
+
+    <!-- Optional hero motion video -->
+    <video
+      class="hero-video"
+      id="heroVideo"
+      autoplay
+      muted
+      loop
+      playsinline
+      preload="metadata">
+      <source src="assets/videos/hero-motion.mp4" type="video/mp4">
+    </video>
+
+    <div class="video-overlay"></div>
+  </div>
+
+
+  <!-- NAVIGATION -->
+  <header class="navbar">
+    <a href="#home" class="logo">
+      <span class="logo-mark">H</span>
+      <span>Huzaifa</span>
+    </a>
+
+    <nav class="nav-links">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#work">Work</a>
+      <a href="#services">Services</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <a
+      class="nav-button"
+      href="https://wa.me/918668813113"
+      target="_blank"
+      rel="noopener">
+      Let's Talk
+    </a>
+
+    <button class="menu-button" id="menuButton" aria-label="Open menu">
+      <span></span>
+      <span></span>
+    </button>
+  </header>
+
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#work">Work</a>
+    <a href="#services">Services</a>
+    <a href="#contact">Contact</a>
+
+    <a
+      class="mobile-contact"
+      href="https://wa.me/918668813113"
+      target="_blank"
+      rel="noopener">
+      Contact Me →
+    </a>
+  </div>
+
+
+  <main>
+
+    <!-- HERO -->
+    <section class="hero section" id="home">
+
+      <div class="hero-content">
+
+        <div class="hero-badge reveal">
+          <span class="status-dot"></span>
+          Available for freelance work
+        </div>
+
+        <p class="hero-small reveal">
+          WEB DEVELOPER <span>•</span> VIDEO EDITOR
+        </p>
+
+        <h1 class="hero-title reveal">
+          Hi, I'm
+          <span class="gradient-text">Huzaifa.</span>
+          <br>
+          I build digital
+          <span class="outline-text">experiences.</span>
+        </h1>
+
+        <p class="hero-description reveal">
+          I create modern websites, cinematic videos and motion graphics
+          that turn ideas into memorable digital experiences.
+        </p>
+
+        <div class="hero-buttons reveal">
+
+          <a class="btn btn-primary" href="#work">
+            <span>Explore My Work</span>
+            <span class="btn-arrow">↗</span>
+          </a>
+
+          <a class="btn btn-secondary" href="#contact">
+            <span>Let's Work Together</span>
+          </a>
+
+        </div>
+
+        <div class="hero-socials reveal">
+
+          <a
+            href="https://www.instagram.com/n__h___h__/"
+            target="_blank"
+            rel="noopener">
+            Instagram ↗
+          </a>
+
+          <span>•</span>
+
+          <a
+            href="https://wa.me/918668813113"
+            target="_blank"
+            rel="noopener">
+            WhatsApp ↗
+          </a>
+
+        </div>
+
+      </div>
+
+      <div class="scroll-indicator">
+        <span>SCROLL TO EXPLORE</span>
+        <div class="scroll-line"></div>
+      </div>
+
+    </section>
+
+
+    <!-- ABOUT -->
+    <section class="about section" id="about">
+
+      <div class="section-heading reveal">
+        <span class="section-number">01</span>
+        <span class="section-label">ABOUT ME</span>
+      </div>
+
+      <div class="about-grid">
+
+        <div class="about-title reveal">
+          <h2>
+            Turning ideas into
+            <span>digital reality.</span>
+          </h2>
+        </div>
+
+        <div class="about-text reveal">
+
+          <p>
+            I'm Huzaifa, a Web Developer and Video Editor focused on
+            creating visually strong digital experiences.
+          </p>
+
+          <p>
+            From responsive websites and landing pages to cinematic
+            video edits and motion graphics, I combine technology
+            with visual storytelling.
+          </p>
+
+          <a class="text-link" href="#contact">
+            Start a project <span>↗</span>
+          </a>
+
+        </div>
+
+      </div>
+
+
+      <!-- SKILLS -->
+      <div class="skills-wrapper">
+
+        <div class="skill-card reveal">
+          <span class="skill-number">01</span>
+          <h3>Web Development</h3>
+          <p>
+            Modern, responsive and performance-focused websites.
+          </p>
+          <div class="skill-tags">
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JavaScript</span>
+            <span>Responsive</span>
+          </div>
+        </div>
+
+        <div class="skill-card reveal">
+          <span class="skill-number">02</span>
+          <h3>UI / UX</h3>
+          <p>
+            Clean interfaces designed around usability and visual impact.
+          </p>
+          <div class="skill-tags">
+            <span>UI Design</span>
+            <span>UX</span>
+            <span>Landing Pages</span>
+          </div>
+        </div>
+
+        <div class="skill-card reveal">
+          <span class="skill-number">03</span>
+          <h3>Video Editing</h3>
+          <p>
+            Fast-paced edits, cinematic visuals and engaging short-form content.
+          </p>
+          <div class="skill-tags">
+            <span>Reels</span>
+            <span>Cinematic</span>
+            <span>Shorts</span>
+          </div>
+        </div>
+
+        <div class="skill-card reveal">
+          <span class="skill-number">04</span>
+          <h3>Motion Graphics</h3>
+          <p>
+            Dynamic animations and motion visuals that bring content alive.
+          </p>
+          <div class="skill-tags">
+            <span>Motion</span>
+            <span>Animation</span>
+            <span>Visual FX</span>
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- WORK -->
+    <section class="work section" id="work">
+
+      <div class="section-heading reveal">
+        <span class="section-number">02</span>
+        <span class="section-label">SELECTED WORK</span>
+      </div>
+
+      <div class="work-intro reveal">
+        <h2>
+          Projects that
+          <span>make an impact.</span>
+        </h2>
+
+        <p>
+          A selection of digital projects created with a focus on
+          design, performance and visual storytelling.
+        </p>
+      </div>
+
+
+      <!-- PROJECT -->
+      <article class="project-card reveal">
+
+        <div class="project-visual">
+
+          <div class="project-glow"></div>
+
+          <div class="project-browser">
+
+            <div class="browser-bar">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+
+            <div class="browser-content">
+
+              <div class="browser-logo">
+                THE ROYAL HELP
+              </div>
+
+              <div class="browser-lines">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+
+              <div class="browser-boxes">
+                <div></div>
+                <div></div>
+                <div></div>
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+
+        <div class="project-info">
+
+          <div class="project-top">
+            <span>01 / WEB DEVELOPMENT</span>
+            <span>2026</span>
+          </div>
+
+          <h3>The Royal Help</h3>
+
+          <p>
+            A professional recruitment and work-from-home telecalling
+            website designed with a modern interface and responsive layout.
+          </p>
+
+          <div class="project-tags">
+            <span>Website</span>
+            <span>Responsive</span>
+            <span>UI Design</span>
+          </div>
+
+          <a
+            class="project-link"
+            href="https://recruitment-website-y71f.bolt.host"
+            target="_blank"
+            rel="noopener">
+            View Live Project
+            <span>↗</span>
+          </a>
+
+        </div>
+
+      </article>
+
+    </section>
+
+
+    <!-- VIDEO EDITING -->
+    <section class="video-section section" id="video-edits">
+
+      <div class="section-heading reveal">
+        <span class="section-number">03</span>
+        <span class="section-label">VIDEO EDITING</span>
+      </div>
+
+      <div class="video-heading reveal">
+
+        <h2>
+          Visuals with
+          <span>energy.</span>
+        </h2>
+
+        <p>
+          Short-form edits, cinematic sequences and motion-driven
+          content created to grab attention.
+        </p>
+
+      </div>
+
+
+      <!-- FILTER BUTTONS -->
+      <div class="filters reveal">
+
+        <button class="filter active" data-filter="all">
+          All
+        </button>
+
+        <button class="filter" data-filter="sigma">
+          Sigma Edits
+        </button>
+
+        <button class="filter" data-filter="indian">
+          Indian Edits
+        </button>
+
+        <button class="filter" data-filter="cinematic">
+          Cinematic
+        </button>
+
+        <button class="filter" data-filter="reels">
+          Reels
+        </button>
+
+        <button class="filter" data-filter="motion">
+          Motion Graphics
+        </button>
+
+      </div>
+
+
+      <!-- VIDEO GRID -->
+      <div class="video-grid">
+
+        <!-- Replace video paths with your own videos -->
+
+        <article class="video-card reveal" data-category="sigma">
+
+          <div class="video-placeholder">
+
+            <div class="play-button">▶</div>
+
+            <span class="video-number">01</span>
+
+            <div class="video-pattern"></div>
+
+          </div>
+
+          <div class="video-meta">
+            <div>
+              <span>SIGMA EDIT</span>
+              <h3>Powerful Visual Edit</h3>
+            </div>
+            <span>↗</span>
+          </div>
+
+        </article>
+
+
+        <article class="video-card reveal" data-category="indian">
+
+          <div class="video-placeholder">
+
+            <div class="play-button">▶</div>
+
+            <span class="video-number">02</span>
+
+            <div class="video-pattern"></div>
+
+          </div>
+
+          <div class="video-meta">
+            <div>
+              <span>INDIAN EDIT</span>
+              <h3>Culture & Energy</h3>
+            </div>
+            <span>↗</span>
+          </div>
+
+        </article>
+
+
+        <article class="video-card reveal" data-category="cinematic">
+
+          <div class="video-placeholder">
+
+            <div class="play-button">▶</div>
+
+            <span class="video-number">03</span>
+
+            <div class="video-pattern"></div>
+
+          </div>
+
+          <div class="video-meta">
+            <div>
+              <span>CINEMATIC</span>
+              <h3>Story Through Frames</h3>
+            </div>
+            <span>↗</span>
+          </div>
+
+        </article>
+
+
+        <article class="video-card reveal" data-category="reels">
+
+          <div class="video-placeholder">
+
+            <div class="play-button">▶</div>
+
+            <span class="video-number">04</span>
+
+            <div class="video-pattern"></div>
+
+          </div>
+
+          <div class="video-meta">
+            <div>
+              <span>REELS</span>
+              <h3>Short Form Content</h3>
+            </div>
+            <span>↗</span>
+          </div>
+
+        </article>
+
+
+        <article class="video-card reveal" data-category="motion">
+
+          <div class="video-placeholder">
+
+            <div class="play-button">▶</div>
+
+            <span class="video-number">05</span>
+
+            <div class="video-pattern"></div>
+
+          </div>
+
+          <div class="video-meta">
+            <div>
+              <span>MOTION GRAPHICS</span>
+              <h3>Motion In Every Frame</h3>
+            </div>
+            <span>↗</span>
+          </div>
+
+        </article>
+
+
+        <article class="video-card reveal" data-category="cinematic">
+
+          <div class="video-placeholder">
+
+            <div class="play-button">▶</div>
+
+            <span class="video-number">06</span>
+
+            <div class="video-pattern"></div>
+
+          </div>
+
+          <div class="video-meta">
+            <div>
+              <span>CINEMATIC</span>
+              <h3>Dark Cinematic Story</h3>
+            </div>
+            <span>↗</span>
+          </div>
+
+        </article>
+
+      </div>
+
+    </section>
+
+
+    <!-- SERVICES -->
+    <section class="services section" id="services">
+
+      <div class="section-heading reveal">
+        <span class="section-number">04</span>
+        <span class="section-label">SERVICES</span>
+      </div>
+
+      <div class="services-header reveal">
+
+        <h2>
+          What I can
+          <span>create for you.</span>
+        </h2>
+
+      </div>
+
+
+      <div class="services-list">
+
+        <div class="service reveal">
+          <div class="service-number">01</div>
+
+          <div class="service-main">
+            <h3>Website Development</h3>
+            <p>
+              Professional websites built to look great on every screen.
+            </p>
+          </div>
+
+          <div class="service-arrow">↗</div>
+        </div>
+
+
+        <div class="service reveal">
+          <div class="service-number">02</div>
+
+          <div class="service-main">
+            <h3>Landing Pages</h3>
+            <p>
+              High-impact landing pages designed to communicate clearly
+              and convert visitors.
+            </p>
+          </div>
+
+          <div class="service-arrow">↗</div>
+        </div>
+
+
+        <div class="service reveal">
+          <div class="service-number">03</div>
+
+          <div class="service-main">
+            <h3>Video Editing</h3>
+            <p>
+              Reels, cinematic edits, social media content and visual stories.
+            </p>
+          </div>
+
+          <div class="service-arrow">↗</div>
+        </div>
+
+
+        <div class="service reveal">
+          <div class="service-number">04</div>
+
+          <div class="service-main">
+            <h3>Motion Graphics</h3>
+            <p>
+              Dynamic animations and motion graphics for brands and creators.
+            </p>
+          </div>
+
+          <div class="service-arrow">↗</div>
+        </div>
+
+
+        <div class="service reveal">
+          <div class="service-number">05</div>
+
+          <div class="service-main">
+            <h3>UI / UX Design</h3>
+            <p>
+              Clean and engaging interfaces focused on user experience.
+            </p>
+          </div>
+
+          <div class="service-arrow">↗</div>
+        </div>
+
+
+        <div class="service reveal">
+          <div class="service-number">06</div>
+
+          <div class="service-main">
+            <h3>Website Optimization</h3>
+            <p>
+              Responsive layouts, performance improvements and basic SEO.
+            </p>
+          </div>
+
+          <div class="service-arrow">↗</div>
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- PROCESS -->
+    <section class="process section">
+
+      <div class="section-heading reveal">
+        <span class="section-number">05</span>
+        <span class="section-label">MY PROCESS</span>
+      </div>
+
+      <div class="process-grid">
+
+        <div class="process-card reveal">
+          <span>01</span>
+          <h3>Discover</h3>
+          <p>
+            Understanding your idea, goals and audience.
+          </p>
+        </div>
+
+        <div class="process-card reveal">
+          <span>02</span>
+          <h3>Design</h3>
+          <p>
+            Creating the visual direction and experience.
+          </p>
+        </div>
+
+        <div class="process-card reveal">
+          <span>03</span>
+          <h3>Build</h3>
+          <p>
+            Turning the design into a responsive digital product.
+          </p>
+        </div>
+
+        <div class="process-card reveal">
+          <span>04</span>
+          <h3>Launch</h3>
+          <p>
+            Testing, polishing and delivering the final experience.
+          </p>
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- CONTACT -->
+    <section class="contact section" id="contact">
+
+      <div class="contact-inner reveal">
+
+        <p class="contact-label">HAVE A PROJECT IN MIND?</p>
+
+        <h2>
+          Let's create
+          <span>something great.</span>
+        </h2>
+
+        <p class="contact-description">
+          Whether you need a website, video edit or motion graphics,
+          let's turn your idea into something people remember.
+        </p>
+
+        <div class="contact-buttons">
+
+          <a
+            class="btn btn-primary large"
+            href="https://wa.me/918668813113"
+            target="_blank"
+            rel="noopener">
+            <span>Message on WhatsApp</span>
+            <span class="btn-arrow">↗</span>
+          </a>
+
+          <a
+            class="btn btn-secondary large"
+            href="https://www.instagram.com/n__h___h__/"
+            target="_blank"
+            rel="noopener">
+            Instagram
+            <span>↗</span>
+          </a>
+
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <!-- FOOTER -->
+  <footer class="footer">
+
+    <div class="footer-top">
+
+      <div class="footer-brand">
+        <div class="logo">
+          <span class="logo-mark">H</span>
+          <span>Huzaifa</span>
+        </div>
+
+        <p>
+          Web Developer & Video Editor
+        </p>
+      </div>
+
+
+      <div class="footer-links">
+
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#work">Work</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+
+      </div>
+
+
+      <div class="footer-social">
+
+        <a
+          href="https://www.instagram.com/n__h___h__/"
+          target="_blank"
+          rel="noopener">
+          Instagram ↗
+        </a>
+
+        <a
+          href="https://wa.me/918668813113"
+          target="_blank"
+          rel="noopener">
+          WhatsApp ↗
+        </a>
+
+      </div>
+
+    </div>
+
+
+    <div class="footer-bottom">
+
+      <span>© 2026 Huzaifa. All rights reserved.</span>
+
+      <span>Built with creativity & code.</span>
+
+    </div>
+
+  </footer>
+
+
+  <!-- VIDEO LIGHTBOX -->
+  <div class="lightbox" id="lightbox">
+
+    <button class="lightbox-close" id="lightboxClose">
+      ×
+    </button>
+
+    <div class="lightbox-content">
+
+      <video
+        id="lightboxVideo"
+        controls
+        playsinline>
+      </video>
+
+      <div class="lightbox-message" id="lightboxMessage">
+        Add your video file to assets/videos/ to play it here.
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <script src="script.js"></script>
+
+</body>
+</html>
